@@ -26,7 +26,8 @@
     font-weight: 400;
     line-height: 50px; /* 166.667% */
     letter-spacing: 0.6px;
-    margin: 20px 0;
+    margin: 20px 20px;
+
 }
 
 .header .container {
@@ -96,4 +97,206 @@
     background-color: #0C0C0E;
     width: 520px;
     flex-shrink: 0;
+}
+
+.about h1 {
+    olor: #0C0C0E;
+
+    font-family: Forum, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.small__hr {
+    width: 50px;
+    height: 1px;
+}
+
+.about__text {
+    color: #000;
+
+    text-align: center;
+    font-family: Inter, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+
+    margin-top: 40px;
+}
+
+.about__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 20px;
+    gap: 25px;
+}
+
+.about_item {
+
+}
+
+.about__nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.favorites h1 {
+    color: #0C0C0E;
+
+    font-family: Forum, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pick_text {
+    color: #000;
+
+    text-align: left;
+    font-family: Inter, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin-top: 40px;
+}
+
+.favorites__seasons {
+    display: flex;
+    margin-top: 40px;
+    color: #000;
+    font-family: Inter, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 90px;
+    margin-bottom: 40px;
+}
+
+.favorites__seasons input[type="radio"]:checked{
+    font-weight: 700;
+}
+
+.favorites__items {
+    display: grid;
+    margin: 0 20px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: stretch;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 87px;
+    gap: 260px;
+}
+
+.favorites__item {
+    border: 1px solid #000;
+    background: #FFF;
+    position: relative;
+    min-height: 555px;
+    padding: 15px 20px;
+}
+
+.favorites__staff {
+    color: #000;
+
+    font-family: Forum, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.favorites__item h1 {
+    color: #000;
+
+    font-family: Inter, serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 266.667% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.favorites h2 {
+    color: #000;
+    font-family: Inter, serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.favorites__text {
+    margin-top: 20px;
+    color: #000;
+
+    font-family: Inter, serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 266.667% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    max-width: 355px;
+}
+
+.favorites__button {
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    width: 75px;
+    height: 30px;
+    flex-shrink: 0;
+    background-color: #FFFFFF;
+
+    color: #0C0C0E;
+
+    text-align: center;
+    font-family: Inter, serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+}
+
+.favorites__book {
+    position: absolute;
+    bottom: 0;
+    right: -40px;
 }
