@@ -58,25 +58,20 @@
         <div class="container">
             <h1>Favorites</h1>
             <hr class="small__hr">
-
             <p class="pick_text">Pick favorites of season</p>
             <div class="favorites__seasons">
-                <span>
                 <label>
-                    <input type="radio" name="season" value="Winter">
-                </label>Winter</span>
-                <span>
+                    <input checked type="radio" name="season" value="Winter"><span class="favorites__seasonsLabel">Winter</span>
+                </label>
                 <label>
-                    <input type="radio" name="season" value="Spring">
-                </label>Spring</span>
-                <span>
+                    <input type="radio" name="season" value="Spring"><span class="favorites__seasonsLabel">Spring</span>
+                </label>
                 <label>
-                    <input type="radio" name="season" value="Summer">
-                </label>Summer</span>
-                <span>
-                    <label>
-                    <input type="radio" name="season" value="Autumn">
-                </label>Autimn</span>
+                    <input type="radio" name="season" value="Summer"><span class="favorites__seasonsLabel">Summer</span>
+                </label>
+                <label>
+                    <input type="radio" name="season" value="Autumn"><span class="favorites__seasonsLabel">Autum</span>
+                </label>
             </div>
             <div class="favorites__items">
                 <div class="favorites__item">
@@ -92,6 +87,7 @@
                     <button class="favorites__button">Buy</button>
                     <img class="favorites__book" src="./img/book1.png" alt="">
                 </div>
+                <div></div>
                 <div class="favorites__item">
                     <p class="favorites__staff">Staff Picks</p>
                     <div class="favorites__staff__line"></div>
@@ -119,6 +115,7 @@
                     <button class="favorites__button">Buy</button>
                     <img class="favorites__book" src="./img/book3.png" alt="">
                 </div>
+                <div></div>
                 <div class="favorites__item">
                     <p class="favorites__staff">Staff Picks</p>
                     <div class="favorites__staff__line"></div>
@@ -144,25 +141,75 @@
                 and also you can try desserts from bakery.
             </p>
             <div class="coffeeShop__pricelist">
-                <div class="coffeeShop__price__leftSide">
+                <div class="coffeeShop__leftPrice">
                     <h2>Coffee & Tea</h2>
-                    <p>Cold Brew Coffee <span class="coffeeShop__price">$3</span></p>
-                    <p>French Press Pot <span class="coffeeShop__price">$5</span></p>
-                    <p>Espresso <span class="coffeeShop__price">$2</span></p>
-                    <p>Cappuccino <span class="coffeeShop__price">$4</span></p>
-                    <p>Hot tea <span class="coffeeShop__price">$2</span></p>
-                    <p>Cold tea <span class="coffeeShop__price">$2</span></p>
+                    <div class="coffeeShop__priceWrap">
+                        <div class="coffeeShop__name">Cold Brew Coffee</div>
+                        <div class="coffeeShop__line"></div>
+                        <div class="coffeeShop__price">$3</div>
+                    </div>
+                    <div class="coffeeShop__priceWrap">
+                        <div class="coffeeShop__name">French Press Pot</div>
+                        <div class="coffeeShop__line"></div>
+                        <div class="coffeeShop__price">$5</div>
+                    </div>
+                    <div class="coffeeShop__priceWrap">
+                        <div class="coffeeShop__name">Espdivesso</div>
+                        <div class="coffeeShop__line"></div>
+                        <div class="coffeeShop__price">$2</div>
+                    </div>
+                    <div class="coffeeShop__priceWrap">
+                        <div class="coffeeShop__name">Cappuccino</div>
+                        <div class="coffeeShop__line"></div>
+                        <div class="coffeeShop__price">$4</div>
+                    </div>
+                    <div class="coffeeShop__priceWrap">
+                        <div class="coffeeShop__name">Hot tea</div>
+                        <div class="coffeeShop__line"></div>
+                        <div class="coffeeShop__price">$2</div>
+                    </div>
+                    <div class="coffeeShop__priceWrap">
+                        <div class="coffeeShop__name">Cold tea</div>
+                        <div class="coffeeShop__line"></div>
+                        <div class="coffeeShop__price">$2</div>
+                    </div>
                 </div>
-                <div class="coffeeShop__price__rightSide">
+                <div class="coffeeShop__rightPrice">
                     <h2>Desserts & Cakes</h2>
-                    <p>Forest Gateau <span class="coffeeShop__price">$16</span></p>
-                    <p>Blue Moon <span class="coffeeShop__price">$16</span></p>
-                    <p>Truffle Cake <span class="coffeeShop__price">$15</span></p>
-                    <p>Chocolate Cake <span class="coffeeShop__price">$18</span></p>
-                    <p>Poet’s Dream Cake <span class="coffeeShop__price">$16</span></p>
-                    <p>Pineapple Cake <span class="coffeeShop__price">$14</span></p>
+                    <div class="coffeeShop__priceWrap">
+                        <div class="coffeeShop__name">Forest Gateau</div>
+                        <div class="coffeeShop__line"></div>
+                        <div class="coffeeShop__price">$16</div>
+                    </div>
+                    <div class="coffeeShop__priceWrap">
+                        <div class="coffeeShop__name">Blue Moon</div>
+                        <div class="coffeeShop__line"></div>
+                        <div class="coffeeShop__price">$16</div>
+                    </div>
+                    <div class="coffeeShop__priceWrap">
+                        <div class="coffeeShop__name">Truffle Cake</div>
+                        <div class="coffeeShop__line"></div>
+                        <div class="coffeeShop__price">$15</div>
+                    </div>
+                    <div class="coffeeShop__priceWrap">
+                        <div class="coffeeShop__name">Chocolate Cake</div>
+                        <div class="coffeeShop__line"></div>
+                        <div class="coffeeShop__price">$18</div>
+                    </div>
+                    <div class="coffeeShop__priceWrap">
+                        <div class="coffeeShop__name">Poet’s Dream Cake</div>
+                        <div class="coffeeShop__line"></div>
+                        <div class="coffeeShop__price">$16</div>
+                    </div>
+                    <div class="coffeeShop__priceWrap">
+                        <div class="coffeeShop__name">Pineapple Cake</div>
+                        <div class="coffeeShop__line"></div>
+                        <div class="coffeeShop__price">$14</div>
+                    </div>
                 </div>
             </div>
+        </div>
+        </div>
         </div>
     </section>
     <section class="contacts">
@@ -205,7 +252,8 @@
             </div>
             <div class="libraryCards__rightSide">
                 <h2>Get a reader card</h2>
-                <p class="text">You will be able to see a reader card after logging into account or you can register a new
+                <p class="text">You will be able to see a reader card after logging into account or you can register a
+                    new
                     account</p>
                 <div class="libraryCards__buttons">
                     <button class="libraryCards__button">Sing Up</button>
@@ -218,21 +266,23 @@
 <footer class="footer">
     <div class="container">
         <div class="footer1">
-            <div class="footer1__leftSide">
-                <p class="footer1__address">
-                    286 Cadman Plaza, New York, NY 11238, United States
-                </p>
+            <div class="footer1__firstLine">
+                <div class="footer1__address">
+                    <p>286 Cadman Plaza, New York,</p>
+                    <p>NY 11238, United States</p>
+                </div>
+                <div class="footer1__worktime">
+                    <p>Mon - Fri</p>
+                    <p>08:00 am - 07:00 pm</p>
+                </div>
+            </div>
+            <div class="footer1__secondLine">
                 <div class="footer1__social">
                     <a href=""><img src="./img/twitter.svg" alt=""></a>
                     <a href=""><img src="./img/instagram.svg" alt=""></a>
                     <a href=""><img src="./img/facebook.svg" alt=""></a>
                 </div>
-            </div>
-            <div class="footer1__rightSide">
                 <div class="footer1__worktime">
-                    <p>Mon - Fri</p>
-                    <p>08:00 am - 07:00 pm</p>
-                    <br>
                     <p>Sat - Sun</p>
                     <p>10:00 am - 06:00 pm</p>
                 </div>

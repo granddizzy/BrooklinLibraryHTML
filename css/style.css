@@ -218,8 +218,12 @@
     margin-bottom: 40px;
 }
 
-.favorites__seasons input[type="radio"]:checked {
-    font-weight: 700;
+.favorites__seasonsLabel {
+    margin-left: 20px;
+}
+
+.favorites__seasons input[type="radio"]:checked + span {
+    font-weight: bold;
 }
 
 .favorites__items {
@@ -228,8 +232,8 @@
     justify-content: center;
     align-items: center;
     justify-items: stretch;
-    grid-template-columns: 1fr 1fr;
-    gap: 260px;
+    grid-template-columns: 1fr 180px 1fr;
+    gap: 40px;
 }
 
 .favorites__item {
@@ -341,7 +345,7 @@
 }
 
 .coffeeShop .container {
-    padding: 20px 20px;
+    padding: 20px 20px 40px;
 }
 
 .coffeeShop h1 {
@@ -364,15 +368,21 @@
     align-items: flex-start;
 }
 
-.coffeeShop__price__leftSide {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
+.coffeeShop__leftPrice {
+
 }
 
-.coffeeShop__price__leftSide h2 {
+.coffeeShop__priceWrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+    padding-top: 40px;
+}
+
+.coffeeShop__leftPrice h2 {
     color: #BB945F;
 
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -387,16 +397,21 @@
     text-transform: capitalize;
 }
 
-.coffeeShop__price__rightSide {
-    display: flex;
-    width: 482px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 40px;
+.coffeeShop__name {
+    width: 220px;
 }
 
-.coffeeShop__price__rightSide h2 {
+.coffeeShop__line {
+    background-color: #BB945F;
+    height: 1px;
+    width: 100px;
+}
+
+.coffeeShop__rightPrice {
+
+}
+
+.coffeeShop__rightPrice h2 {
     color: #BB945F;
 
     font-family: Forum, serif;
@@ -406,6 +421,11 @@
     line-height: 40px; /* 100% */
     letter-spacing: 2px;
     text-transform: capitalize;
+    text-align: right;
+}
+
+.coffeeShop__rightPrice .coffeeShop__name {
+    text-align: right;
 }
 
 .coffeeShop__price {
@@ -502,6 +522,7 @@
     line-height: 40px; /* 100% */
     letter-spacing: 2px;
     text-transform: capitalize;
+    margin-bottom: 20px;
 }
 
 .libraryCards__leftSide {
@@ -656,19 +677,24 @@
 }
 
 .footer1 {
+
+}
+
+.footer1__firstLine {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: flex-start;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.footer1__leftSide {
+.footer1__secondLine {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
-    align-items: flex-start;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer1__social {
