@@ -118,6 +118,7 @@
 .small__hr {
     width: 50px;
     height: 1px;
+    margin-bottom: 40px;
 }
 
 .about__text {
@@ -396,8 +397,63 @@
     text-transform: capitalize;
 }
 
+.contacts {
+    color: #000;
 
+    text-align: center;
+    font-family: Inter, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
 
+.contacts .container {
+    padding: 20px 20px 40px;
+}
+
+.contacts h1 {
+    color: #0C0C0E;
+
+    text-align: center;
+    font-family: Forum, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.contacts .contacts__block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contacts__leftSide {
+    text-align: left;
+}
+
+.contacts h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.contacts__leftSide_h2all {
+    margin-bottom: 40px!important;
+    margin-top: 0 !important;
+}
+
+.contacts__staffname {
+    font-weight: 700;
+}
 
 
 
