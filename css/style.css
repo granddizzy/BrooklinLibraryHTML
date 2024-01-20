@@ -106,7 +106,7 @@
 }
 
 .about h1 {
-    olor: #0C0C0E;
+    color: #0C0C0E;
 
     font-family: Forum, serif;
     font-size: 40px;
@@ -156,8 +156,12 @@
 }
 
 .about__nav {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 
 .favorites .container {
