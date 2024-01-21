@@ -9,7 +9,7 @@
 }
 
 .container {
-    width: 1440px;
+    max-width: 1440px;
     margin: auto;
 }
 
@@ -42,11 +42,21 @@
 
 .navigation {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+}
+
+.navigation__links {
+    display: flex;
+    gap: 30px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
 }
 
 .navigation a {
@@ -79,6 +89,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    max-width: 100%;
 }
 
 .banner__text {
@@ -103,6 +114,10 @@
     background-color: #0C0C0E;
     width: 520px;
     flex-shrink: 0;
+}
+
+.about .container {
+    padding: 20px 20px;
 }
 
 .about h1 {
@@ -139,22 +154,37 @@
     font-weight: 400;
     line-height: 40px; /* 200% */
 
-    margin-top: 40px;
+    margin: 40px 0 0;
 }
 
 .about__items {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: center;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 20px 20px;
+    margin: 20px 0;
     gap: 25px;
 }
 
-.about_item {
+.about__items_small {
+    display: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
 
+.about__items_small img {
+    max-width: 100%;
+}
+
+.about__items img {
+    max-width: 100%;
+}
+
+.about_item {
+    display: flex;
+    justify-content: center;
 }
 
 .about__nav {
@@ -212,7 +242,7 @@
     font-weight: 400;
     line-height: normal;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
     gap: 90px;
     margin-bottom: 40px;
@@ -230,10 +260,11 @@
     display: grid;
     align-content: center;
     justify-content: center;
-    align-items: center;
+    align-items: normal;
     justify-items: stretch;
-    grid-template-columns: 1fr 180px 1fr;
+    grid-template-columns: 1fr auto 1fr;
     gap: 40px;
+    margin-right: 20px;
 }
 
 .favorites__item {
@@ -242,6 +273,7 @@
     position: relative;
     min-height: 555px;
     padding: 15px 20px;
+    max-width: 550px;
 }
 
 .favorites__staff {
@@ -298,7 +330,9 @@
     line-height: 40px; /* 266.667% */
     letter-spacing: 2px;
     text-transform: capitalize;
-    max-width: 355px;
+    /*max-width: 355px;*/
+    max-width: 65%;
+    margin-bottom: 50px;
 }
 
 .favorites__button {
@@ -330,6 +364,7 @@
     position: absolute;
     bottom: 0;
     right: -40px;
+    width: 40%;
 }
 
 .coffeeShop {
@@ -363,7 +398,7 @@
 .coffeeShop__pricelist {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
 }
@@ -471,12 +506,16 @@
     margin-bottom: 20px;
 }
 
-.contacts .contacts__block {
+.contacts__block {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+.contacts__rightSide img {
+    max-width: 100%;
 }
 
 .contacts__leftSide {
@@ -505,10 +544,10 @@
 .libraryCards .container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px 20px;
+    /*padding: 20px 20px;*/
 }
 
 .libraryCards h1 {
@@ -556,7 +595,7 @@
     flex-wrap: nowrap;
     align-items: stretch;
     gap: 20px;
-    width: 560px;
+    width: calc(100% - 40px);
 }
 
 .libraryCards__findform2 h3 {
@@ -622,12 +661,11 @@
     line-height: normal;
     letter-spacing: 1px;
 
-    /*width: 242px;*/
     cursor: pointer;
 }
 
 .libraryCards__findform input {
-    width: 520px;
+    width: calc(100% - 40px);
     height: 66px;
     flex-shrink: 0;
     border-radius: 10px;
@@ -727,3 +765,98 @@
     margin-top: 44px;
     margin-bottom: 24px;
 }
+
+@media (max-width: 1245px) {
+    .contacts__block {
+        display: block;
+    }
+
+    .contacts__rightSide {
+        margin-top: 100px;
+    }
+
+    .libraryCards .container {
+        justify-content: center;
+        gap: 21px;
+    }
+
+    .libraryCards__rightSide {
+        text-align: center;
+        width: 100%;
+    }
+
+    .libraryCards__rightSide h2 {
+        text-align: center;
+    }
+
+    .libraryCards__rightSide .text {
+        text-align: center;
+        /*width: 100%;*/
+        padding: 0 64px;
+        width: auto;
+    }
+
+    .libraryCards__buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 990px) {
+    .navigation__links {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .coffeeShop__pricelist {
+        display: block;
+    }
+
+    .coffeeShop__rightPrice {
+        margin-top: 40px;
+    }
+
+    .coffeeShop__rightPrice .coffeeShop__priceWrap {
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 768px) {
+    .favorites__items {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .about__items_small {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .about__items {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .libraryCards__leftSide {
+        width: 100%;
+    }
+
+    .libraryCards__findform {
+        width: calc(100% - 40px);
+    }
+}
+
+@media (max-width: 600px) {
+    .banner__text {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
